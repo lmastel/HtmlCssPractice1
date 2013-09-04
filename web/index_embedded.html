@@ -1,0 +1,92 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            #body{
+                background-color: turquoise;
+
+            }
+            #h4
+            {
+                font-style:italic;
+                text-decoration:overline;
+                text-indent:10px;
+                color: blue;
+
+            } 
+            .select{
+                color: red;
+            }
+            #textarea{
+                color:red;
+                border-style:solid;
+                border-width:5px;
+                border-color:red;
+            }
+        </style>
+    </head>
+
+    <body id="body">
+
+        <form> 
+            <h1>Customer Profile</h1>
+            <p>Salutation:
+                <select class="select" style="margin-left:4px;" name="salutation">
+                    <option value="none">None</option>
+                    <option value="mr">Mr</option>
+                    <option value="mrmrs">Mr and Mrs</option>
+                    <option value="ms">Ms</option>
+
+                </select></p>
+
+            First name: <input type="text" name="firstname" value="" maxlength="30"><br>
+            Last name: <input style="margin-left:1px;" type="text" 
+                              name="lastname" value=""  maxlength="30"><br>
+            Address: <input style="margin-left:15px;" type="text" 
+                            name="address" value="" size ="40" maxlength="40"><br>
+            City: <input style="margin-left:40px;" type="text" 
+                         name="city" value="" maxlength="30">
+
+
+
+            <p >State:
+                <select class="select" style="margin-left:36px;" name="state">
+                    <option value="al">AL</option>
+                    <option value="ca">CA</option>
+                    <option value="il">IL</option>
+                    <option value="wi">WI</option>
+                </select></p>
+
+            Zip: <input style="margin-left:42px;" type="text" 
+                        name="zip" value="" size ="10" maxlength="10"><br>
+
+            <p></p>
+
+            <input type="checkbox" name="addrtype" value="billing"> Billing Address<br>
+            <input type="checkbox" name="addrtype" value="shipping" checked="checked"> Shipping Address<br>
+
+            <p></p>
+
+            <input type="radio" name="custtype" value="previous customer"> Previous Customer<br>
+            <input type="radio" name="custtype" value="new customer" checked="checked"> New Customer<br>
+
+            <p></p>
+
+            <h4 id="h4">Comments (optional)</h4>
+
+            <textarea id="textarea" rows="4" cols="50" name="comments" maxlength="250">Enter comments here...</textarea><br>
+
+            <p></p>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+    </body>
+</html>
